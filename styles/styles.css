@@ -29,13 +29,12 @@ main {
 }
 aside {
     width: 20rem;
-    margin:1rem
-    border: 1px solid rgba (90 0 0 / 0.20); /* 1 */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
+    margin:1rem;
+    border: 1px solid rgba(90,0,0,0.20); /* 1 */
+    padding:1rem;
+    background-color:#eee;
+    color:#333;
+    text-align:center;}
 aside img {
     width:200px;
     height: auto;
