@@ -6,6 +6,19 @@
 --heading-font: "Rubik", sans-serif;
 --body-font: "Playfair Display", sans-serif;
 }
+head {
+    .rubik-<rubik font> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <600>;
+  font-style: normal;}
+
+ h1.playfair-display-<playfair font> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;}
+}
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
