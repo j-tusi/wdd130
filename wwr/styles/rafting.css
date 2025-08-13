@@ -33,6 +33,10 @@ header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+}
 .hero {
     background: white;
     padding: 3.5rem;
