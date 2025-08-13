@@ -40,7 +40,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    color:##f2f1e3
+    color:var(--cream-color)
     var(--heading-font)
 
 }
@@ -105,11 +105,11 @@ h1{
 .socialmedia a {
     text-decoration: none;
 }
-
 .social-media-logo {
-    width: 25px;  /* Set width to 25px */
-    height: 25px; /* Set height to 25px */
-}.socialmedia {
+    width: 25px; 
+    height: 25px; 
+}
+.socialmedia {
     position: fixed;
     bottom: 20px; 
     right: 20px; 
