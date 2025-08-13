@@ -1,105 +1,113 @@
- {
-    max-width: 100%;
-    overflow-x: hidden;
-}
+/* ========== GLOBAL RESET ========== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ========== ROOT VARIABLES ========== */
 :root {
---primary-color: #545333; /* forestgreen */
---secondary-color: #878672; /*greyish green*/
---accent1-color: #FDFBD4; /* light cream */
---accent2-color: #D9D7B6; /* yellowish cream */
---heading-font: "Rubik", sans-serif;
---body-font: "Playfair Display", sans-serif;
+    --primary-color: #545333;      /* Forest green */
+    --secondary-color: #878672;    /* Greyish green */
+    --accent1-color: #FDFBD4;      /* Light cream */
+    --accent2-color: #D9D7B6;      /* Yellowish cream */
+    --heading-font: "Rubik", sans-serif;
+    --body-font: "Playfair Display", serif;
 }
-head{
-.rubik-<uniquifier> {
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <400>;
-  font-style: normal;
-}
-}
-body {.playfair-display-<uniquifier> {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}}
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-.hero {
-    background: white;
-    padding: 3.5rem;
-    display: flex
-;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;}
-main {
-    display: block;
-    unicode-bidi: isolate;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+/* ========== BASE STYLES ========== */
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: var(--accent1-color);
 }
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+
+header, main, footer {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
 }
-.socialmedia a {
+
+/* ========== HEADER ========== */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: var(--accent2-color);
     text-decoration: none;
-    .social-media-logo {
-        width: 50px;
-        height: 50px; 
-    }
+    font-weight: bold;
 }
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ========== HERO SECTION ========== */
 .hero {
     position: relative;
+    background: white;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.hero img{
+
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
-h1{
+
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: var(--accent2-color);
-    color: #fff; /*white text - make sure there is enough contract with the background color*/
+    color: white;
 }
+
+/* ========== ARTICLE IMAGE ========== */
 .hero article img {
     float: right;
     width: 125px;
-    border: #545333;
     margin: 10px;
-    box-shadow: unset;
+    border: 2px solid var(--primary-color);
 }
 
+/* ========== CONTENT SPACING ========== */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* ========== SOCIAL MEDIA ICONS ========== */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 50px;
+    height: 50px;
+}
