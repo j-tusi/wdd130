@@ -23,6 +23,7 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     background-color: var(--accent1-color);
+    line-height: 1.5;
 }
 
 h1, h2 {
@@ -41,24 +42,41 @@ header {
     background-color: var(--primary-color);
     color: var(--black-color);
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd; /* placeholder background */
+    border-radius: 6px;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 1rem;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: var(--accent2-color);
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    transition: background 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background: var(--accent2-color);
+    color: white;
 }
 
 /* ========== HERO SECTION ========== */
@@ -70,51 +88,113 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+    border: 1px solid #ddd;
+    margin: 1rem 0;
 }
 
 .hero h1 {
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    padding-right: 120px; /* space for side image */
+}
+
+.hero img {
     position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary-color); /* placeholder */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* ========== HISTORY SECTION ========== */
+.history {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.history-text {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.history-image {
+    flex: 0 0 150px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* ========== ADVENTURE AWAITS SECTION ========== */
+.adventure {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
     text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent2-color);
-    color: white;
+    margin-bottom: 1rem;
 }
 
-/* ========== ARTICLE IMAGE ========== */
-.hero article img {
-    float: right;
-    width: 125px;
-    margin: 10px;
-    border: 2px solid var(--primary-color);
-}
-.image-row img {
-  width: 150px;          /* fixed width */
-  height: 150px;         /* fixed height */
-  object-fit: cover;     /* crop and scale to fill the box */
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  flex-shrink: 0;        /* don’t let image shrink */
-  cursor: pointer;
-  transition: transform 0.3s ease;
+.adventure h2 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
-.image-row img:hover {
-  transform: scale(1.05);
+.adventure-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-/* ========== CONTENT SPACING ========== */
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+.adventure-item {
+    width: 150px;
+    text-align: center;
+}
+
+.adventure-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.adventure-item img:hover {
+    transform: scale(1.05);
+}
+
+.adventure-item caption {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
 }
 
 /* ========== SOCIAL MEDIA ICONS ========== */
@@ -125,4 +205,16 @@ nav, p, section, article {
 .socialmedia img {
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+/* ========== CONTENT SPACING ========== */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
 }
