@@ -93,7 +93,7 @@ h1{
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent2-color);
-    color: #fff; /*white text - make sure ther eis enough contract with the background color*/
+    color: #fff; /*white text - make sure there is enough contract with the background color*/
 }
 .hero article img {
     float: right;
