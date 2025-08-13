@@ -1,220 +1,107 @@
-/* ========== GLOBAL RESET ========== */
+Rafting css
+ {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* ========== ROOT VARIABLES ========== */
 :root {
-    --primary-color: #545333;      /* Forest green */
-    --secondary-color: #878672;    /* Greyish green */
-    --accent1-color: #FDFBD4;      /* Light cream */
-    --accent2-color: #D9D7B6;      /* Yellowish cream */
-    --black-color: #000000;        /* Black */ 
-    --heading-font: "Rubik", sans-serif;
-    --body-font: "Playfair Display", serif;
+--primary-color: #545333; /* forestgreen */
+--secondary-color: #878672; /*greyish green*/
+--accent1-color: #FDFBD4; /* light cream */
+--accent2-color: #D9D7B6; /* yellowish cream */
+--heading-font: "Rubik", sans-serif;
+--body-font: "Playfair Display", sans-serif;
 }
-
-/* ========== BASE STYLES ========== */
+head{
+.rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <400>;
+  font-style: normal;
+}
+}
+body {.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}}
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.hero {
+    background: white;
+    padding: 3.5rem;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;}
+main {
+    display: block;
+    unicode-bidi: isolate;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: var(--body-font);
-    color: var(--primary-color);
-    max-width: 100%;
-    overflow-x: hidden;
-    background-color: var(--accent1-color);
-    line-height: 1.5;
+    color: var(--accent1-color);
 }
-
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-
-header, main, footer {
-    max-width: 840px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-/* ========== HEADER ========== */
-header {
-    background-color: var(--primary-color);
-    color: var(--black-color);
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-header img {
-    width: 80px;
-    height: 80px;
-    background-color: #ddd; /* placeholder background */
-    border-radius: 6px;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: var(--accent2-color);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1.5rem;
-    background: white;
-    border-radius: 3px;
-    border: 1px solid #aaa;
-    transition: background 0.3s;
-}
-
-nav a:hover {
-    background: var(--accent2-color);
-    color: white;
-}
-
-/* ========== HERO SECTION ========== */
-.hero {
-    position: relative;
-    background: white;
-    padding: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #ddd;
-    margin: 1rem 0;
-}
-
-.hero h1 {
-    margin-bottom: 1rem;
-    font-weight: normal;
-    color: var(--primary-color);
-}
-
-.hero p {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: left;
-    position: relative;
-    padding-right: 120px; /* space for side image */
-}
-
-.hero img {
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100px;
-    height: 100px;
-    background-color: var(--secondary-color); /* placeholder */
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-/* ========== HISTORY SECTION ========== */
-.history {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.history-text {
-    flex: 1;
-    font-size: 0.9rem;
-}
-
-.history-image {
-    flex: 0 0 150px;
-    background-color: var(--primary-color);
-    border-radius: 6px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.history-image img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-/* ========== ADVENTURE AWAITS SECTION ========== */
-.adventure {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.adventure h2 {
-    margin-bottom: 1rem;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.adventure-gallery {
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.adventure-item {
-    width: 150px;
-    text-align: center;
-}
-
-.adventure-item img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    margin-bottom: 0.5rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.adventure-item img:hover {
-    transform: scale(1.05);
-}
-
-.adventure-item caption {
-    font-size: 0.85rem;
-    color: var(--secondary-color);
-}
-
-/* ========== SOCIAL MEDIA ICONS ========== */
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.socialmedia img:hover {
-    transform: scale(1.1);
-}
-
-/* ========== CONTENT SPACING ========== */
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
+.socialmedia a {
+    text-decoration: none;
+    .social-media-logo {
+        width: 50px;
+        height: 50px; 
+    }
+}
+.hero {
+    position: relative;
+}
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent2-color);
+    color: #fff; /*white text - make sure there is enough contract with the background color*/
+}
+.hero article img {
+    float: right;
+    width: 125px;
+    border: #545333;
+    margin: 10px;
+    box-shadow: unset;
+}
+
+
