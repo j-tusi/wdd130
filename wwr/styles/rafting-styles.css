@@ -96,6 +96,20 @@ nav a:hover {
     margin: 10px;
     border: 2px solid var(--primary-color);
 }
+.image-row img {
+  width: 150px;          /* fixed width */
+  height: 150px;         /* fixed height */
+  object-fit: cover;     /* crop and scale to fill the box */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  flex-shrink: 0;        /* don’t let image shrink */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+}
 
 /* ========== CONTENT SPACING ========== */
 nav, p, section, article {
