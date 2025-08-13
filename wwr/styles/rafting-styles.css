@@ -11,6 +11,7 @@
     --secondary-color: #878672;    /* Greyish green */
     --accent1-color: #FDFBD4;      /* Light cream */
     --accent2-color: #D9D7B6;      /* Yellowish cream */
+    --black-color: #000000;        /* Black */ 
     --heading-font: "Rubik", sans-serif;
     --body-font: "Playfair Display", serif;
 }
@@ -38,7 +39,7 @@ header, main, footer {
 /* ========== HEADER ========== */
 header {
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: var(--black-color);
     padding: 1rem;
 }
 
