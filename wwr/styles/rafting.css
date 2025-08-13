@@ -24,6 +24,18 @@ header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
+.hero {
+    background: white;
+    padding: 3.5rem;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;}
+main {
+    display: block;
+    unicode-bidi: isolate;
+}
 *{
     margin: 0;
     padding: 0;
