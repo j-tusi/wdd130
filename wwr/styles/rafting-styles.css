@@ -21,8 +21,9 @@ head{
 .rubik-<uniquifier> {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <400>;
+  font-weight: <900>;
   font-style: normal;
+  color: --black-color;
 }
 }
 body {.playfair-display-<uniquifier> {
