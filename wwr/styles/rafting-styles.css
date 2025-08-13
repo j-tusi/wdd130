@@ -39,6 +39,9 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    color:#1d280b
+    var(--heading-font)
+
 }
 .hero {
     background: white;
