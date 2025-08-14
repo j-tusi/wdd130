@@ -115,8 +115,8 @@ h1{
 }
 .socialmedia {
     position: absolute;  
-    bottom: 20px;     
-    right: 20px;      
+    bottom: 0px;     
+    right: 0px;      
     display: flex;    
     gap: 10px;        
 }
