@@ -554,7 +554,7 @@ button {
 /* Submit button */
 .rafting-grid button,
 .contact-form button,
-.contact-form input[type="submit"] {
+.contact-form input[type="Submit form"] {
   align-self: flex-start;
   background: #0066cc;
   color: white;
