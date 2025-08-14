@@ -244,6 +244,7 @@ h1{
     gap: 0.75rem;
     flex: 0 0 auto;
     justify-items: display right;
+    flex-direction: row;
 }
 
 .socialmedia img {
