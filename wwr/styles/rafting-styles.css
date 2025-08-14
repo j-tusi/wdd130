@@ -42,6 +42,7 @@ nav {
 
 header div h1 {
     margin: 0;
+    align-items: center;
 }
 
 nav a {
