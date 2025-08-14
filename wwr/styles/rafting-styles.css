@@ -239,20 +239,28 @@ h1{
 
 
 /*Social Media*/
-.socialmedia a {
-    text-decoration: none;
-}
-.social-media-logo {
-    width: 25px; 
-    height: 25px; 
-}
 .socialmedia {
-    position: absolute;  
-    bottom: 20px;     
-    right: 20px;      
-    display: flex;    
-    gap: 10px;        
+    display: flex;
+    gap: 0.75rem;
+    flex: 0 0 auto;
 }
+
+.socialmedia img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+/* Prevents from scrolling horizantally, Verhindert horizontales scrollen */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 
 
