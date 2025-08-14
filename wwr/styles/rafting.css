@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 
-/* Basic Colors and Fonts, Grundfarben und Schriften */
+/* Basic Colors and Fonts */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     background-color: white;
     color: #333;
     line-height: 1.6;
