@@ -1,0 +1,157 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    background-color: #f2f1e3; /* Light cream background for the page */
+}
+
+/* Header */
+header {
+    background-color: #6c4f9b; /* Purple background */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo inside header */
+header .logo img {
+    width: 50px; /* Adjust the size of the logo */
+}
+
+/* Navigation inside header */
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* White Water Rafting Section */
+.white-water-rafting {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f2f1e3; /* Cream background */
+}
+
+.white-water-rafting h1 {
+    flex: 1;
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.white-water-rafting .content {
+    flex: 2;
+    font-size: 16px;
+    color: #333;
+}
+
+.white-water-rafting .image img {
+    width: 300px;
+    height: auto;
+}
+
+/* History Section */
+.history {
+    padding: 40px;
+    background-color: #625e10; /* Dark mustard background */
+    color: #fff;
+}
+
+.history h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.history-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-content p {
+    flex: 2;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.history-content .history-image img {
+    width: 250px;
+    height: auto;
+}
+
+/* Adventure Awaits You Section */
+.adventure {
+    padding: 40px;
+    background-color: #ddd; /* Light gray background */
+    text-align: center;
+}
+
+.adventure h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventure-gallery .gallery-item {
+    text-align: center;
+    width: 30%;
+}
+
+.adventure-gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.adventure-gallery .gallery-item caption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #6c4f9b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .socialmedia a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Social Media Icons */
+footer .socialmedia a {
+    text-decoration: none;
+}
