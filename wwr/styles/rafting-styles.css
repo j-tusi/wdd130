@@ -36,6 +36,7 @@ body {.playfair-display-<uniquifier> {
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    width:100%
 }
 nav {
     display: flex;
