@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="This page is to show the offerings of all types of rafting trips. The User can get inforamtion about the various rafting oeffings, the description, duration adn the price. Also teh user can click a button to book (no booking page yet).">
-    <meta name="author" content="Norbert Ferdinand Stemmer">
-    <title>Black Forest River Rafting - Trips, Rates, Dates</title>
+        content="This page is to show the different types of rafting trips and be able to book them.">
+    <meta name="author" content="Jayd Jacobson Tusieseina">
+    <title>Greys River Rafting Guides - Trips, Rates, Dates</title>
     <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,8 @@
 
 <body>
     <header>
-        <img src="images/Logo.png" alt="Logo of Whihte River Rafting" class="logo">
-        <div><h1>Black Forest River Rafting</h1></div>
+        <img src="images/rafting-logo.png" alt="Logo Greys River Rafting Guides" class="logo">
+        <div><h1>Greys River Rafting Guides</h1></div>
         <nav>
             <a href="index.html" target="blank">Home</a>
             <a href="about.html" target="blank">About Us</a>
@@ -29,31 +29,31 @@
     </header>
 
     <main>
-    <!-- Rafting Offerings -->
-    <section class="offerings">
-    <h2>Rafting Offerings</h2>
-        <p class="offerings-intro">Choose from one of our exciting offerings for White River Rafting with us!</p>
+    <!-- Rafting Options -->
+    <section class="options">
+    <h2>Rafting Options</h2>
+        <p class="options-intro">Choose from one of our exciting packages to enjoy river rafting with us!</p>
     <ul class="offer-list">
         <!-- 1 -->
         <li class="offer">
-        <img src="images/river-rafting05.jpg" alt="Beginner river run with calm rapids">
+        <img src="images/canoe.jpg" alt="Beginner">
             <div class="offer-body">
-            <h3>Beginner River Run</h3>
-            <p>Perfect for first-timers. A gentle stretch with Class I–II rapids and scenic canyon views. Guide included.</p>
+            <h3>Nice and Easy</h3>
+            <p>Perfect for first-timers. A gentle stretch with scenic views and slow rolling waters. Lunch and beverages provided.</p>
             <ul class="meta">
                 <li>Duration: 2.5h</li>
                 <li>Difficulty: Easy</li>
             </ul>
             </div>
             <div class="offer-cta">
-                <div class="price">€49</div>
-                <a class="btn" href="#book-beginner" aria-label="Book Beginner River Run">Book now</a>
+                <div class="price">$100</div>
+                <a class="btn" href="#book-beginner" aria-label="Book Nice and Easy">Book now</a>
             </div>
         </li>
 
         <!-- 2 -->
         <li class="offer">
-        <img src="images/river-rafting04.jpg" alt="Family-friendly rafting trip">
+        <img src="images/red.jpg" alt="Family Fun">
             <div class="offer-body">
                 <h3>Family Float</h3>
                 <p>Relaxed pace, plenty of splash zones, and frequent stops for photos. Great for kids 6+.</p>
@@ -63,7 +63,7 @@
                 </ul>
             </div>
             <div class="offer-cta">
-                <div class="price">€59</div>
+                <div class="price">$150</div>
                 <a class="btn" href="#book-family" aria-label="Book Family Float">Book now</a>
             </div>
         </li>
@@ -80,71 +80,37 @@
                 </ul>
             </div>
             <div class="offer-cta">
-                <div class="price">€79</div>
+                <div class="price">$200</div>
                 <a class="btn" href="#book-class3" aria-label="Book Rapid Rush Class 3">Book now</a>
             </div>
         </li>
 
         <!-- 4 -->
         <li class="offer">
-        <img src="images/river-rafting07.jpg" alt="Advanced whitewater Class IV">
+        <img src="images/splash.jpg" alt="Whipping Whitewater">
             <div class="offer-body">
-                <h3>Whitewater Pro (Class IV)</h3>
-                <p>Powerful rapids, technical lines, and serious thrills. Prior rafting experience recommended.</p>
+                <h3>Whipping Whitewater</h3>
+                <p>A shot of pure adrenaline. This daring course is for those who are physically and emotionally strong. Prior rafting experience recommended.</p>
                 <ul class="meta">
                 <li>Duration: 3.5h</li>
                 <li>Difficulty: Hard</li>
                 </ul>
             </div>
             <div class="offer-cta">
-                <div class="price">€99</div>
-                <a class="btn" href="#book-class4" aria-label="Book Whitewater Pro Class 4">Book now</a>
-            </div>
-        </li>
-
-        <!-- 5 -->
-        <li class="offer">
-        <img src="images/river-rafting09.jpg" alt="Sunset rafting tour">
-            <div class="offer-body">
-                <h3>Sunset Canyon Cruise</h3>
-                <p>Golden hour float with calm rapids and a riverside snack stop. Stunning light, great photos.</p>
-                <ul class="meta">
-                <li>Duration: 2h</li>
-                <li>Difficulty: Easy</li>
-                </ul>
-            </div>
-            <div class="offer-cta">
-                <div class="price">€69</div>
-                <a class="btn" href="#book-sunset" aria-label="Book Sunset Canyon Cruise">Book now</a>
-            </div>
-        </li>
-
-        <!-- 6 -->
-        <li class="offer">
-        <img src="images/river-rafting08.jpg" alt="Full-day rafting adventure">
-            <div class="offer-body">
-                <h3>Full-Day Adventure</h3>
-                <p>All the best sections in one day—mix of Class II–IV, picnic lunch included, and lots of river time.</p>
-                <ul class="meta">
-                <li>Duration: 7h</li>
-                <li>Difficulty: Moderate–Hard</li>
-                </ul>
-            </div>
-            <div class="offer-cta">
-                <div class="price">€149</div>
-                <a class="btn" href="#book-fullday" aria-label="Book Full-Day Adventure">Book now</a>
+                <div class="price">$150</div>
+                <a class="btn" href="#book-class4" aria-label="Book whipping Whitewater">Book now</a>
             </div>
         </li>
     </ul>
      <!-- <a class="btn" href="contact.html">Check Out Our Trips</a> -->
-    <a class="btn btn--center" href="contact.html">Cntact us to inquire for a booking</a>
+    <a class="btn btn--center" href="contact.html">Contact us with any inquiry.</a>
 
 </section>
 
 </main>
 
 <footer>
-        <p>© 2025 | Black Forest River Rafting | Norbert Ferdinand Stemmer</p>
+        <p>© 2025 | Greys River Rafting Guides| Jayd Jacobson Tusieseina</p>
                <div>
             <a href="https://app.moqups.com/FttbQdAPCVUdeO1q65q2qbLLeXu3zzj2/view/page/ad64222d5">
                 <img src="images/moqups_icon.png" alt="Moqups">
@@ -156,13 +122,13 @@
 
         <div class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook_icon.svg" alt="Facebook">
+                <img src="images/facebook.png" alt="Facebook">
             </a>
             <a href="https://twitter.com">
-                <img src="images/twitter_icon.svg" alt="Twitter">               
+                <img src="images/twitter.png" alt="Twitter">               
             </a>
             <a href="http://instagram.com">
-                <img src="images/instagram_icon.svg" alt="Instagram">
+                <img src="images/instagram.jpg" alt="Instagram">
             </a>
         </div>
     </footer>
