@@ -4,6 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Root Selectors*/
+:root {
+--primary-color: #545333; /* forestgreen */
+--secondary-color: #878672; /*greyish green*/
+--accent1-color: #1d280b; /* evergreen */
+--accent2-color: #625e10; /* dark mustard */
+--black-color: #000000; /* black*/
+--cream-color:#f2f1e3; /* cream */
+--heading-font: "Rubik", sans-serif;
+--body-font: "Playfair Display", sans-serif;
+}
 
 /* Basic Colors and Fonts */
 body {
